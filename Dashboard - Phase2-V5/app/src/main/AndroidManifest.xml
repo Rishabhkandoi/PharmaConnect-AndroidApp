@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shailesh.dashboard">
+
+
+    <uses-permission android:name="android.permission.HARDWARE_TEST.accelerometer" android:requiredFeature="true"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PharmaConnect"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:roundIcon="@mipmap/ic_launcher_round">
+
+
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value= "AIzaSyBRRyZWat6suAbI5u82vgM4E0EDqW_RjSg" />
+
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us">
+
+        </activity>
+
+        <activity
+            android:name=".PharmacyLocator.PharmacyLocator"
+            android:label="Pharmacy Locator">
+
+        </activity>
+
+        <activity
+            android:name=".NewsFeed"
+            android:label="News Feed">
+
+        </activity>
+
+        <activity
+            android:name=".MyProfile"
+            android:label="My Profile">
+
+        </activity>
+
+        <activity
+            android:name=".Logout"
+            android:label="Bye Bye!">
+
+        </activity>
+
+        <activity
+            android:name=".Policies"
+            android:label="Pharmacy Policies!">
+
+        </activity>
+
+        <activity
+            android:name="com.example.shailesh.dashboard.Survey.SurveyActivity"
+            android:label="Survey - Google Form">
+
+        </activity>
+
+        <activity
+            android:name="com.example.shailesh.dashboard.Survey.SplashActivity"
+            android:theme="@style/SplashTheme">
+
+        </activity>
+        <activity android:name="com.example.shailesh.dashboard.Survey.SurveyMainActivity"
+            android:label="@string/title_activity_main" />
+
+        <activity
+            android:name="com.example.shailesh.dashboard.Survey.ThankYouActivity"
+            android:label="@string/title_activity_thank_you" />
+        <activity
+            android:name="com.example.shailesh.dashboard.Survey.ManualInputActivity"
+            android:label="@string/title_activity_manual_input" />
+        <activity
+            android:name="com.example.shailesh.dashboard.Survey.SingleQuestionActivity"
+            android:label="@string/title_activity_single_question" />
+        <activity
+            android:name="com.example.shailesh.dashboard.Survey.ChangeAnswerActivity"
+            android:label="@string/title_activity_change_answer" />
+
+        <receiver android:name="com.example.shailesh.dashboard.Survey.NotificationPublisher" />
+
+        <activity
+            android:name=".Notification"
+            android:label="Notification Alert!">
+
+        </activity>
+
+        <activity
+            android:name=".ContactUs"
+            android:label="Contact Us">
+
+        </activity>
+
+        <activity android:name=".DrugWiki.ViewProfile" android:parentActivityName=".DrugWiki.SearchForNames"></activity>
+
+        <activity android:name=".DrugWiki.SearchForNames"/>
+        <activity android:name=".Register"/>
+        <activity android:name=".MainActivity"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="@string/fb_login_protocol_scheme" />
+        </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

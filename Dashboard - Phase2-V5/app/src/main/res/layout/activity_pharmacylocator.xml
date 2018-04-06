@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/B_pharmacy" />
+
+    <Button
+        android:id="@+id/B_pharmacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvLocate"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvLocate"
+        android:layout_marginLeft="83dp"
+        android:layout_marginStart="83dp"
+        android:onClick="onClick"
+        android:text="Pharmacy" />
+
+    <Button
+        android:id="@+id/B_hospitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/B_pharmacy"
+        android:layout_toRightOf="@+id/B_pharmacy"
+        android:onClick="onClick"
+        android:text="Hospitals" />
+
+    <TextView
+        android:id="@+id/tvLocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/B_pharmacy"
+        android:layout_alignBottom="@+id/B_pharmacy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:text="Locate"
+        android:textSize="24sp" />
+
+</RelativeLayout>
