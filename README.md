@@ -20,7 +20,7 @@ Our team, from NIIT University, consisted of the following members:-
 
 ## **Proposed Solution**
 
-**PharmaConnect** is an android app that gives a common platform to integrate all the pharmaceutical groups together under one umbrella. For a non-exoert, this app also provides many other features.
+**PharmaConnect** is an android app that gives a common platform to integrate all the pharmaceutical groups together under one umbrella. For a non-expert, this app also provides many other features.
 
 **WHY MOBILE APP ?**
 
