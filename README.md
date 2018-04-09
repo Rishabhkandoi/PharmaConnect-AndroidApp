@@ -10,7 +10,7 @@ Our team, from NIIT University, consisted of the following members:-
 1. [Rishabh Kumar Kandoi](https://github.com/Rishabhkandoi/)
 2. [Harshit Budhraja](https://github.com/harshitbudhraja/)
 3. [Kumari Renuka](https://github.com/renuka24502/)
-4. Shailesh Mohta
+4. [Shailesh Mohta](https://github.com/ShaileshMohta/)
 5. Abhimanyu Sangitrao
 6. Isha Pali
 
